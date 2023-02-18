@@ -119,7 +119,7 @@ public class Pagination {
 
 
     public int getNumberOfPages() {
-        return numberOfPages;
+        return numberOfItem;
     }
     
     public int getCurrent(){
@@ -168,9 +168,7 @@ public class Pagination {
                 start -= numberOfPageToShow;
             }
         }
-        System.out.println("from paginatiom remainingPage"+remainingPage+" numberOfPageToShow"+numberOfPageToShow);
-        System.out.println("start "+start);
-        System.out.println("end "+end);
+        
 
 //       start -=numberOfPageToShow;
 //       end = start+(remainingPage==0 ? numberOfPageToShow : remainingPage);
