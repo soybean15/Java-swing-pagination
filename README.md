@@ -95,5 +95,5 @@ paginationHandler.addMouseListener(new PaginationMouseListener(){
  
 
  ## Sample Usage
-- See sample usage [here](https://pages.github.com/).
+- See sample usage [here](https://github.com/soybean15/Java-swing-pagination/tree/master/src/sample).
 
