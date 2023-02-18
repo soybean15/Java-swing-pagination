@@ -8,7 +8,10 @@ Simple pagination library you can use on your Java swing projects.
 
 
 ## How to use
-1. Create a **JPanel** container where you want to store your pagination buttons. 
+1. Create a **JPanel** container where you want to store your pagination buttons. JPanel container = new JPanel();
+```
+JPanel container = new JPanel();
+```
 2. Instantiate **PaginationHandler**.
 ```java
 
@@ -24,8 +27,6 @@ PaginationHandler paginationHandler = new PaginationHandler(set, totalItems, num
 ```
 3. Add the pagination to the container you created on step 1.
 ```java
-JPanel container = new JPanel();
-
 container.add(paginationHandler.getPagination());
 ```
 4. Add mouse click listener.
