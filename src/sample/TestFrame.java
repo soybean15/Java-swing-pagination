@@ -82,8 +82,9 @@ public class TestFrame extends javax.swing.JFrame {
        
         paginationHandler.addMouseListener(new PaginationMouseListener(){
             
-              @Override
+            @Override
             public void onClick(PaginationEvent e) {    
+                
                 populate( e.startIndex(),  e.endIndex());
                 pages.setText("Page "+e.getCurrentPage()+" of "+e.getTotalPage());
 

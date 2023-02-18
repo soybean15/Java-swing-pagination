@@ -26,7 +26,7 @@ public class PaginationHandler implements CustomComponentListener {
     /**
      *
      * @param set how many items you want to show per page
-     * @param totalItems total item of data you want to fetch
+     * @param totalItems total items of data you want to show
      * @param numberOfPageToShow how many page button you want to display
      */
     public PaginationHandler(int set, int totalItems, int numberOfPageToShow) {
@@ -46,10 +46,12 @@ public class PaginationHandler implements CustomComponentListener {
 
     }
 
-    public void addListener() {
+    
+    private void addListener() {
         COMPONENT.addListener(this);
     }
 
+    //add mouseListener on your pagination buttons
     public void addMouseListener(PaginationMouseListener listener) {
         COMPONENT.addMouseListener(listener);
     }
@@ -67,7 +69,10 @@ public class PaginationHandler implements CustomComponentListener {
         CONTAINER.setVisible(totalItems != 0);
 
     }
+    
 
+    // get pagination buttons, it returns a panel that includes all the pages button 
+    // you must provide a container
     public JPanel getPagination() {
 
         return CONTAINER;
