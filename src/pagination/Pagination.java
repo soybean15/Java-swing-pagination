@@ -4,8 +4,7 @@
  */
 package pagination;
 
-import javax.swing.JPanel;
-import pagination.event.PaginationEvent;
+
 
 /**
  *

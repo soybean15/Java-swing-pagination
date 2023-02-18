@@ -89,7 +89,7 @@ public class TestFrame extends javax.swing.JFrame {
                 
                 populate( e.startIndex(),  e.endIndex());
                 pages.setText("Page "+e.getCurrentPage()+" of "+e.getTotalPage());
-
+              
             }
             @Override
             public void onSelected(PaginationEvent e){
