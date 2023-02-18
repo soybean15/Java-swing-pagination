@@ -42,6 +42,8 @@ public class TestFrame extends javax.swing.JFrame {
 
     
 
+        
+        //create music list
         for (int i = 0; i < 102; i++) {
             musics.add(new Music("music" + i, "artist" + i));
         }
@@ -83,7 +85,7 @@ public class TestFrame extends javax.swing.JFrame {
         paginationHandler.addMouseListener(new PaginationMouseListener(){
             
             @Override
-            public void onClick(PaginationEvent e) {    
+            public void onClick(PaginationEvent e) {  //on click event  
                 
                 populate( e.startIndex(),  e.endIndex());
                 pages.setText("Page "+e.getCurrentPage()+" of "+e.getTotalPage());
@@ -92,6 +94,7 @@ public class TestFrame extends javax.swing.JFrame {
             @Override
             public void onSelected(PaginationEvent e){
               
+                //change background color to red and foreground to yellow once selected
                 e.getButton().setBackground(Color.red);
                 e.getButton().setForeground(Color.yellow);
                 
@@ -99,6 +102,7 @@ public class TestFrame extends javax.swing.JFrame {
             @Override
             public void onHover(PaginationEvent e){
               
+                //mouse entered event
                 e.getButton().setBackground(Color.green);               
                 
             }
