@@ -9,7 +9,7 @@ Simple pagination library you can use on your Java swing projects.
 
 ## How to use
 1. Create a **JPanel** container where you want to store your pagination buttons. JPanel container = new JPanel();
-```
+```java
 JPanel container = new JPanel();
 ```
 2. Instantiate **PaginationHandler**.
