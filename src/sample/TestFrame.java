@@ -121,6 +121,7 @@ public class TestFrame extends javax.swing.JFrame {
         container.repaint();
         container.revalidate();
        
+        //create music list
         List<Music> _musics = musics.subList(start, end+1);
         
 
