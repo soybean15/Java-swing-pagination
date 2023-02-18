@@ -3,12 +3,15 @@
 Simple pagination library you can use on your Java swing projects.
 
 ## Jar File
-- Download the jar file [here](https://pages.github.com/).
+- Download the jar file [here](https://github.com/soybean15/Java-swing-pagination/releases).
 
 
 
 ## How to use
 1. Create a **JPanel** container where you want to store your pagination buttons. 
+```java
+JPanel container = new JPanel();
+```
 2. Instantiate **PaginationHandler**.
 ```java
 
@@ -24,8 +27,6 @@ PaginationHandler paginationHandler = new PaginationHandler(set, totalItems, num
 ```
 3. Add the pagination to the container you created on step 1.
 ```java
-JPanel container = new JPanel();
-
 container.add(paginationHandler.getPagination());
 ```
 4. Add mouse click listener.
@@ -96,4 +97,8 @@ paginationHandler.addMouseListener(new PaginationMouseListener(){
 
  ## Sample Usage
 - See sample usage [here](https://github.com/soybean15/Java-swing-pagination/tree/master/src/sample).
+
+ ## Sample Output
+![image](https://user-images.githubusercontent.com/75112014/219864078-581f2bd8-073c-42b9-a7b2-19be0dcaaa90.png)
+
 
