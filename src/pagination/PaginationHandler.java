@@ -34,7 +34,7 @@ public class PaginationHandler implements CustomComponentListener {
         this.PAGINATION = new Pagination(set, totalItems == 0 ? 1 : totalItems, numberOfPageToShow < 5 ? 5 : numberOfPageToShow);
         COMPONENT = new PaginationComponent(numberOfPageToShow < 5 ? 5 : numberOfPageToShow);
         this.totalItems = totalItems;
-        addListener();
+        
         createPagination();
         COMPONENT.addMouseListener(new PaginationMouseListener() {
             @Override
@@ -56,6 +56,7 @@ public class PaginationHandler implements CustomComponentListener {
 
     private void createPagination() {
 
+        addListener();
         CONTAINER = COMPONENT.createPages(
                 PAGINATION.start(),
                 PAGINATION.end(),
