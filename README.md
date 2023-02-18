@@ -3,7 +3,7 @@
 Simple pagination library you can use on your Java swing projects.
 
 ## Jar File
-- Download the jar file [here](https://pages.github.com/).
+- Download the jar file [here](https://github.com/soybean15/Java-swing-pagination/releases).
 
 
 
