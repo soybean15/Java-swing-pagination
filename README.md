@@ -64,7 +64,8 @@ paginationHandler.addMouseListener(new PaginationMouseListener(){
 
 ## Other method
  - You can change the design of your buttons by using the **.modifyButton()** method.
- sample:
+ 
+sample:
  ```java    
    //this methods used consumer function
    
